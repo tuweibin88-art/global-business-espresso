@@ -1,0 +1,76 @@
+{
+  "episodes": [
+    {
+      "number": "001",
+      "label": "试播",
+      "date": "2026-06-24",
+      "title": "便宜流量与免税小包，正在被重新定价",
+      "deck": "科技股降温、欧盟低价包裹新规倒计时，以及 Prime Day 背后的零售入口争夺。",
+      "duration": "5 分 22 秒",
+      "audioUrl": "assets/audio/2026-06-24.mp3",
+      "market": {
+        "updatedAt": "6月24日亚洲时段",
+        "items": [
+          { "name": "标普500", "value": "7,365.46", "change": "-1.4%", "direction": "down" },
+          { "name": "纳斯达克", "value": "25,587.04", "change": "-2.2%", "direction": "down" },
+          { "name": "恒生指数", "value": "23,441.48", "change": "+0.5%", "direction": "up" },
+          { "name": "上证指数", "value": "4,110.81", "change": "+0.1%", "direction": "up" },
+          { "name": "布伦特原油", "value": "$75.91", "change": "-1.2%", "direction": "down" },
+          { "name": "美元/日元", "value": "161.69", "change": "走强", "direction": "up" }
+        ]
+      },
+      "stories": [
+        {
+          "category": "全球经济",
+          "title": "世界银行预计今年全球增速降至 2.5%",
+          "summary": "能源供应风险正在推高通胀和融资成本。对于跨境企业，影响会沿着运输、包装与消费者购买力逐层传导。",
+          "source": "世界银行 · 2026.06.11",
+          "sourceUrl": "https://www.worldbank.org/en/news/press-release/2026/06/11/global-economic-prospects-june-2026-press-release"
+        },
+        {
+          "category": "跨境电商",
+          "title": "欧盟低价包裹 3 欧元临时关税进入倒计时",
+          "summary": "7月1日起，不超过150欧元的境外电商小包将按不同海关商品类别计费，而不是简单按包裹计费。",
+          "source": "欧盟委员会 · 2026.06.08",
+          "sourceUrl": "https://taxation-customs.ec.europa.eu/news/guidance-and-legal-text-temporary-flat-fee-low-value-imports-which-will-apply-until-1-july-2028-2026-06-08_en"
+        },
+        {
+          "category": "市场",
+          "title": "AI 与芯片股回调，纳斯达克下跌 2.2%",
+          "summary": "美光科技下跌13.2%，英伟达跌逾4%。市场重新评估AI基础设施投入与商业回报之间的时间差。",
+          "source": "美联社 · 2026.06.23",
+          "sourceUrl": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-8a525396331d3cf41e9a341026c005e7"
+        },
+        {
+          "category": "品牌",
+          "title": "Prime Day 不只是一场促销，而是入口争夺",
+          "summary": "亚马逊、Target与沃尔玛同期促销。卖家需要同时观察广告成本、折后毛利、库存周转和退货率。",
+          "source": "Amazon · 2026.06",
+          "sourceUrl": "https://www.aboutamazon.com/news/retail/amazon-prime-day-2026-date"
+        },
+        {
+          "category": "体育商业",
+          "title": "罗纳尔多成为首位六届世界杯进球的男足球员",
+          "summary": "葡萄牙5比0战胜乌兹别克斯坦。纪录进一步延长了罗纳尔多作为全球代言人与赛事流量入口的商业周期。",
+          "source": "Axios · 2026.06.23",
+          "sourceUrl": "https://www.axios.com/local/houston/2026/06/23/portugal-v-uzbekistan-ronaldo-makes-world-cup-history"
+        }
+      ],
+      "deepDive": {
+        "title": "欧洲新规真正改变的，是直邮模式的利润公式",
+        "lead": "欧盟的3欧元临时关税按商品类别计算。成本上升只是第一层，更深的变化是平台与卖家必须重新安排库存、商品组合和合规数据。",
+        "impacts": [
+          { "title": "多品类订单", "text": "同一包裹包含多个海关商品类别时，新增成本会累积，混装订单的利润更敏感。" },
+          { "title": "本地仓", "text": "平台将更积极推动欧洲本地库存和半托管，以换取时效与确定性。" },
+          { "title": "商品数据", "text": "海关编码与产品标识不再只是合规后台工作，而会直接决定订单成本。" }
+        ]
+      },
+      "watchlist": [
+        { "title": "亚洲科技股能否从剧烈波动中企稳", "time": "今日交易时段" },
+        { "title": "美元走强对人民币与亚洲货币的影响", "time": "全天" },
+        { "title": "Prime Day 第二天的广告成本和价格战", "time": "美国市场" },
+        { "title": "欧盟卖家对 7 月 1 日新关税的最后准备", "time": "剩余 7 天" }
+      ]
+    }
+  ]
+}

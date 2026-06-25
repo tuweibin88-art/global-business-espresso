@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3efe5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="description"
+      content="全球商业早咖啡：每天早上 7:30，用一杯咖啡的时间听懂全球经济、跨境电商、品牌、市场与体育商业。"
+    />
+    <title>全球商业早咖啡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="paper-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="全球商业早咖啡首页">
+        <span class="brand-mark">早</span>
+        <span>
+          <strong>全球商业早咖啡</strong>
+          <small>GLOBAL BUSINESS ESPRESSO</small>
+        </span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#today">今日节目</a>
+        <a href="#archive">往期</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="today">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> 每天 07:30 更新</p>
+          <h1>一杯咖啡的时间，<br />听懂今天的生意。</h1>
+          <p class="hero-intro">
+            全球经济、跨境电商、大品牌、市场价格与体育商业。只讲重要的，也讲清楚为什么重要。
+          </p>
+          <div class="topic-strip" aria-label="节目主题">
+            <span>全球经济</span><span>跨境电商</span><span>品牌</span><span>市场</span><span>体育</span>
+          </div>
+        </div>
+
+        <article class="player-card" aria-label="今日节目播放器">
+          <div class="player-topline">
+            <span class="issue-number" id="issue-number">试播 · 001</span>
+            <time id="episode-date">2026.06.24</time>
+          </div>
+          <div class="cover-art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="cup"><span></span></div>
+            <div class="steam steam-one"></div>
+            <div class="steam steam-two"></div>
+          </div>
+          <p class="player-label">TODAY'S EPISODE</p>
+          <h2 id="episode-title">正在准备今日早咖啡…</h2>
+          <p class="episode-deck" id="episode-deck"></p>
+          <audio id="audio-player" controls preload="metadata">
+            您的浏览器不支持音频播放。
+          </audio>
+          <div class="player-meta">
+            <span id="episode-duration">约 5 分钟</span>
+            <button class="share-button" id="share-button" type="button">分享本期</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="market-ribbon" aria-label="市场温度计">
+        <div class="ribbon-heading">
+          <span>市场温度计</span>
+          <small id="market-time">数据时间</small>
+        </div>
+        <div class="ticker" id="market-ticker"></div>
+      </section>
+
+      <section class="briefing section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE MORNING BRIEF</p>
+            <h2>今天，值得你花时间的事</h2>
+          </div>
+          <p>不是新闻堆砌，而是事实、数字和它们背后的商业影响。</p>
+        </div>
+        <div class="story-grid" id="story-grid"></div>
+      </section>
+
+      <section class="deep-dive section-shell" id="deep-dive">
+        <div class="deep-dive-number">01</div>
+        <div class="deep-dive-content">
+          <p class="eyebrow">TODAY'S DEEP DIVE</p>
+          <h2 id="deep-dive-title"></h2>
+          <p class="deep-dive-lead" id="deep-dive-lead"></p>
+          <div class="impact-list" id="impact-list"></div>
+        </div>
+      </section>
+
+      <section class="watchlist section-shell">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">TODAY'S WATCHLIST</p>
+            <h2>今天继续观察</h2>
+          </div>
+        </div>
+        <ol id="watchlist"></ol>
+      </section>
+
+      <section class="archive section-shell" id="archive">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ARCHIVE</p>
+            <h2>往期节目</h2>
+          </div>
+          <p>每天的商业现场，会慢慢变成一张可回看的地图。</p>
+        </div>
+        <div class="archive-list" id="archive-list"></div>
+      </section>
+
+      <section class="about section-shell" id="about">
+        <p class="eyebrow">ABOUT THE SHOW</p>
+        <div>
+          <h2>快一点知道，<br />慢一点理解。</h2>
+          <p>
+            《全球商业早咖啡》是一档每日商业新闻播客。我们优先采用政府、央行、交易所、企业公告与可靠新闻机构的信息，并区分事实与分析判断。
+          </p>
+          <p class="disclaimer">市场信息仅供参考，不构成投资建议。实时数据可能存在延迟。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="current-year"></span> 全球商业早咖啡</span>
+      <span>北京时间 · 每日 07:30</span>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
