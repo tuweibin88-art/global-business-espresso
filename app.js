@@ -39,7 +39,24 @@ function renderEpisode(episode) {
   $("#episode-title").textContent = episode.title;
   $("#episode-deck").textContent = episode.deck;
   $("#episode-duration").textContent = episode.duration;
-  $("#audio-player").src = episode.audioUrl;
+  const player = $("#audio-player");
+  if (episode.audioUrl) {
+    player.hidden = false;
+    player.src = episode.audioUrl;
+  } else {
+    player.hidden = true;
+    player.removeAttribute("src");
+  }
+
+  const transcriptSection = $("#transcript-section");
+  const transcript = $("#episode-transcript");
+  if (episode.transcript) {
+    transcriptSection.hidden = false;
+    transcript.innerHTML = episode.transcript.split("\n\n").map((paragraph) => `<p>${paragraph}</p>`).join("");
+  } else {
+    transcriptSection.hidden = true;
+    transcript.innerHTML = "";
+  }
 
   renderMarket(episode.market.items, episode.market.updatedAt);
   renderStories(episode.stories);
@@ -57,10 +74,10 @@ function renderEpisode(episode) {
 
 function renderArchive(episodes) {
   $("#archive-list").innerHTML = episodes.map((episode) => `
-    <a class="archive-item" href="${episode.audioUrl}">
+    <a class="archive-item" href="${episode.audioUrl || "#today"}">
       <time>${formatDate(episode.date)}</time>
       <strong>${episode.title}</strong>
-      <span>↗</span>
+      <span>${episode.audioUrl ? "↗" : "读"}</span>
     </a>
   `).join("");
 }

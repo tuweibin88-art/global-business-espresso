@@ -195,6 +195,17 @@ audio { width: 100%; height: 38px; }
 .watchlist strong { font-size: 15px; }
 .watchlist time { color: var(--muted); font-size: 11px; }
 
+.transcript { padding-top: 40px; border-top: 1px solid var(--line); }
+.transcript-card {
+  padding: 32px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 15px;
+}
+.transcript-card p { margin: 0 0 18px; }
+.transcript-card p:last-child { margin-bottom: 0; }
+
 .archive { border-top: 1px solid var(--line); }
 .archive-item { display: grid; grid-template-columns: 150px 1fr 40px; gap: 30px; align-items: center; padding: 25px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
 .archive-item time { color: var(--muted); font-size: 11px; }
