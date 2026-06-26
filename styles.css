@@ -12,6 +12,8 @@
   --shadow: 0 24px 60px rgba(45, 56, 48, 0.14);
 }
 
+[hidden] { display: none !important; }
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
