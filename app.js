@@ -42,10 +42,14 @@ function renderEpisode(episode) {
   const player = $("#audio-player");
   if (episode.audioUrl) {
     player.hidden = false;
+    player.style.display = "";
     player.src = episode.audioUrl;
   } else {
     player.hidden = true;
+    player.style.display = "none";
+    player.pause();
     player.removeAttribute("src");
+    player.load();
   }
 
   const transcriptSection = $("#transcript-section");
